@@ -1,0 +1,253 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.sidebar{
+  background-color: white !important;
+  width: 800px !important;
+}
+.content{
+  background-color: blue !important;
+}
+#productlist{
+  background-color: rebeccapurple;
+  padding: 20px;
+}
+.product-table{
+  border: 1px solid black;
+  border-radius: 10px;
+
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.page {
+  width: 100%;
+  display: flex;
+}
+
+.head {
+  padding-top: 10px;
+}
+/* OrderList.css (atau file CSS Anda) */
+
+/* OrderList.css (atau file CSS Anda) */
+
+/* Gaya untuk tombol "Add" */
+
+
+/* Gaya untuk teks "x selected" */
+p {
+  color: #262626;
+  font-weight: bold;
+}
+
+/* Gaya untuk tombol "Hapus yang Dipilih" */
+
+/* Gaya untuk tabel */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+
+}
+
+@media (max-width: 768px) {
+  .table-container {
+    overflow-x: scroll;
+  }
+  table {
+    width: 100%;
+  }
+}
+/* Gaya untuk header tabel */
+thead {
+  background-color: #f5f5f5;
+}
+
+th {
+  text-align: center;
+  padding: 10px;
+}
+
+/* Gaya untuk sel data */
+td {
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Gaya untuk baris ganjil */
+
+/* Gaya untuk checkbox */
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+
+/* Gaya untuk nomor urut */
+td:nth-child(2) {
+  color: #007BFF;
+  font-weight: bold;
+}
+
+
+/* navigation */
+#navigation {
+  padding: 20px;
+  transition: all 0.8s;
+}
+.navbar .navbar-collapse {
+  text-align: center;
+  background-color: white;
+}
+ul > li > .nav-link {
+  text-transform: uppercase;
+  color: #ccc;
+  font-weight: 400;
+  font-size: 15px;
+  padding: 5px 0;
+  border: 2px solid transparent;
+  letter-spacing: 0.5px;
+  
+}
+ul > li > .nav-link:hover {
+  color: #d43031;
+}
+.navbar .nav-item .nav-link.active {
+  color: #d43031 !important;
+  background-color: transparent;
+}
+.navbar-toggler:hover {
+  background-color: #d43031;
+}
+.navbar-toggler {
+  border-radius: 0;
+  border-color: #fff !important;
+  color: transparent;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+#orderlist {
+  background-color: #333;
+}
+
+/* CSS */
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-dialog {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.modal-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-body {
+  margin-bottom: 20px;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-button {
+  margin-left: 10px;
+}
+
+/* Tombol dropdown sembunyikan awalnya */
+.dropdown-hidden {
+  display: none;
+}
+.dropdown-hidden .btn {
+  border: none;
+  border-radius: 50%; /* Membuatnya menjadi lingkaran */
+  background-color: rgba(85, 85, 85, 0.7); /* Warna #555 dengan tingkat transparansi 0.7 */
+  color: #fff; /* Warna teks yang cocok */
+}
+
+/* Tampilkan tombol dropdown saat kartu dihover */
+.card:hover .dropdown-hidden {
+  display: block;
+}
+
+.col-md-3{
+  margin: 10px auto;
+}
+
+
+.card {
+  height: 375px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: center; /* Pusatkan vertikal (vertically center) */
+  align-items: center; /* Pusatkan horizontal (horizontally center) */
+}
+
+
+.card-img-top {
+  padding: 10px 0;
+  width: auto;
+  max-height: 175px; /* Sesuaikan tinggi gambar sesuai kebutuhan Anda */
+}
+
+.card-body {
+  max-height: 200px; /* Sesuaikan tinggi card-body sesuai kebutuhan Anda */
+}
+
+ .card-title {
+  text-align: center;
+  font-size: 1.25rem; /* Sesuaikan ukuran teks sesuai kebutuhan Anda */
+}
+
+.card-text {
+  margin-top: 20px;
+  font-size: 1rem; /* Sesuaikan ukuran teks sesuai kebutuhan Anda */
+}
+
+.card-price {
+  font-size: 1rem; /* Sesuaikan ukuran teks sesuai kebutuhan Anda */
+}
+@media (min-width: 768px) {
+  .sidebar{
+    min-height: 100vh;
+  }
+  .navbar .navbar-collapse {
+    text-align: justify;
+  }
+}

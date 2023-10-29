@@ -1,0 +1,308 @@
+body,
+html {
+  font-family: "Open Sans", serif;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  font-weight: 400;
+  width: 100% !important;
+  height: 100% !important;
+}
+h1,
+h2,
+h3 {
+  font-family: "Raleway", sans-serif;
+}
+h2 {
+  font-weight: 400;
+  font-size: 38px;
+  color: #333;
+  text-transform: uppercase;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding-bottom: 20px;
+}
+h2::after {
+  position: absolute;
+  content: "";
+  background: #d43031;
+  height: 2px;
+  width: 70px;
+  bottom: 0;
+  margin-left: -35px;
+  left: 50%;
+}
+h3 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #333;
+}
+p {
+  font-size: 15px;
+  color: #777;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.loader-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+
+.admin-content {
+  background-color: red;
+  min-height: 100vh;
+}
+@media (min-width: 769px) {
+  
+  .admin-sidebar {
+    background-color:#444;
+    width: 220px;
+    padding: 20px;
+    min-height: 100vh;
+    position: fixed;
+  }
+  .navbar{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+ 
+
+  }
+  .admin-content {
+    flex: 1;
+    padding: 40px;
+    margin-left: 220px;
+  }
+  .sidebar-footer{
+    position: absolute;
+    bottom: 0;
+  }
+  .navbar-brand-img{
+    max-width: 50%;
+  
+  }
+  .select-visible {
+    padding: 10px 40px 0 240px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
+  .admin-sidebar {
+    background-color: aqua;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 10px;
+  }
+
+ 
+  .select-visible{
+    padding: 10px 10px 0 10px;
+  }
+  
+}
+.navbar-brand{
+  text-align: center;
+}
+ul > li > .nav-link {
+  text-transform: uppercase;
+  color: #ccc;
+  font-weight: 400;
+  font-size: 15px;
+  padding: 5px 0;
+  border: 2px solid transparent;
+  letter-spacing: 0.5px;
+  
+}
+ul > li > .nav-link:hover {
+  color: #d43031;
+}
+.link-active{
+  color: #d43031 !important;
+  background-color: transparent;
+}
+.navbar-toggler:hover {
+  background-color: #d43031;
+}
+.navbar-toggler {
+  border-radius: 0;
+  border-color: #fff !important;
+  color: transparent;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+#orderlist, #productlist{
+  background-color: blue;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+.content-title{
+  padding: 20px;
+}
+.content-head {
+  margin-bottom: 20px;
+}
+.table-container {
+  overflow-x: scroll;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.product-table{
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.product-card{
+  margin: 10px auto;
+}
+.card {
+  height: 375px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+
+.card-img-top {
+  padding: 10px 0;
+  width: auto;
+  max-height: 175px;
+}
+
+.card-body {
+  max-height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+ .card-title {
+  text-align: center;
+  font-size: 1.25rem; /* Sesuaikan ukuran teks sesuai kebutuhan Anda */
+}
+
+.card-text {
+  margin-top: 20px;
+  font-size: 1rem;
+  margin-bottom: auto;
+}
+
+.dropdown-hidden {
+  display: none;
+}
+.dropdown-hidden .btn {
+  border: none;
+  border-radius: 50%; /* Membuatnya menjadi lingkaran */
+  background-color: rgba(85, 85, 85, 0.7); /* Warna #555 dengan tingkat transparansi 0.7 */
+  color: #fff; /* Warna teks yang cocok */
+}
+
+/* Tampilkan tombol dropdown saat kartu dihover */
+.card:hover .dropdown-hidden {
+  display: block;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-dialog {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.modal-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-body {
+  margin-bottom: 20px;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-button {
+  margin-left: 10px;
+}
+
+.select-visible{
+  position: fixed;
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: baseline;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: white;
+}
+/* .spinner-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+} */

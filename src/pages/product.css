@@ -1,0 +1,83 @@
+/* menu */
+#products {
+    padding: 50px 0;
+  }
+  #products h2 {
+    text-align: center;
+  }
+  .card {
+    background-color: #333;
+    border: none;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 300px;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 -1px 30px 1px black;
+  }
+  .card:hover {
+    transform: scale(1.05);
+  }
+  .card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+  }
+  .card-body {
+    padding: 20px;
+    min-height: 220px;
+  }
+  .card-title {
+    color: #aaa;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .card-text {
+    padding-top: 15px;
+  }
+  .order-link {
+    margin: 0 auto;
+    margin-top: 60px;
+  }
+  #order-here {
+    background-color: #fff;
+    color: #333;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    align-items: center;
+  }
+  #order-here:hover {
+    color: #d43031;
+    border: 2px solid #d43031;
+    background-color: #fff;
+  }
+  /* Layar Tablet, PC ++ */
+  @media (min-width: 768px) {
+    .row {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  /* Layar HP */
+  @media (max-width: 767px) {
+    .card {
+      margin: 20px auto;
+    }
+  }
+
+/* Gaya untuk container */
+.loader-container {
+    position: fixed;
+    top: 50%; /* Mengatur posisi vertikal ke tengah halaman */
+    left: 50%; /* Mengatur posisi horizontal ke tengah halaman */
+    transform: translate(-50%, -50%); /* Membawa elemen ke tengah halaman */
+    z-index: 999; /* Mengatur elemen loader di atas konten lain */
+}
